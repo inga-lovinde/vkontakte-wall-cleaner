@@ -7,7 +7,7 @@ Usage:
 
 1. `npm install`
 2. Create new stand-alone VK app on https://vk.com/apps?act=manage , remember its client_id.
-3. Create your token on https://oauth.vk.com/authorize?client_id=CLIENT_ID&redirect_uri=https://oauth.vk.com/blank.html&display=page&scope=8192&response_type=token&v=5.80 , where CLIENT_ID is app id from the previous step (8192 means that script will have access to wall only).
+3. Open https://oauth.vk.com/authorize?client_id=CLIENT_ID&redirect_uri=https://oauth.vk.com/blank.html&display=page&scope=8192&response_type=token&v=5.80 , where CLIENT_ID is app id from the previous step (8192 means that script will have access to wall only). Log in if required to. VK should redirect you to https://oauth.vk.com/blank.html#TOKEN_AND_OTHER_DATA; copy the token from the address line there.
 4. Edit `index.js`, substituting token placeholder for your token.
 5. `node index`
 
